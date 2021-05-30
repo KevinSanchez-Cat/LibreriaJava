@@ -31,8 +31,7 @@ public class ErrorOccured extends javax.swing.JFrame
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
@@ -50,11 +49,11 @@ public class ErrorOccured extends javax.swing.JFrame
         jPanel3.setPreferredSize(new java.awt.Dimension(440, 309));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel8.setBackground(new java.awt.Color(0, 51, 102));
+        jPanel8.setBackground(new java.awt.Color(0, 153, 153));
 
         jLabel9.setBackground(new java.awt.Color(255, 255, 255));
         jLabel9.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setForeground(new java.awt.Color(221, 221, 221));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Notificación ");
 
@@ -91,10 +90,8 @@ public class ErrorOccured extends javax.swing.JFrame
         rSButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_Checked_24px.png"))); // NOI18N
         rSButton1.setText("Ok");
         rSButton1.setColorHover(new java.awt.Color(0, 153, 204));
-        rSButton1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        rSButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSButton1ActionPerformed(evt);
             }
         });

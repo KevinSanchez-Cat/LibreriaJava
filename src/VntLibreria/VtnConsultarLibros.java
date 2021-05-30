@@ -31,8 +31,7 @@ import recursos.Mensaje;
  *
  * @author HP
  */
-public class VtnConsultarLibros extends javax.swing.JFrame
-{
+public class VtnConsultarLibros extends javax.swing.JFrame {
 
     /**
      * Creates new form VtnConsultarLibros
@@ -42,18 +41,15 @@ public class VtnConsultarLibros extends javax.swing.JFrame
     String pantallas_Usuario = "";
     String nombre_Final_de_Usuario = "";
 
-    public VtnConsultarLibros(String pantallas_Usuario, String nombre_Final_de_Usuario)
-    {
+    public VtnConsultarLibros(String pantallas_Usuario, String nombre_Final_de_Usuario) {
         this.nombre_Final_de_Usuario = nombre_Final_de_Usuario;
         this.pantallas_Usuario = pantallas_Usuario;
         initComponents();
-         Image icono = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenesG/buhoAzul.png"));
+        Image icono = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenesG/buhoAzul.png"));
         setIconImage(icono);
         //   setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setResizable(false);
         this.setLocationRelativeTo(null);
-
-     
 
     }
 
@@ -64,8 +60,7 @@ public class VtnConsultarLibros extends javax.swing.JFrame
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         jPopupMenu1 = new javax.swing.JPopupMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -80,10 +75,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         txtBuscarClave = new rojeru_san.RSMTextFull();
 
         jMenuItem1.setText("jMenuItem1");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
             }
         });
@@ -109,16 +102,14 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         jPanel3.setLayout(new java.awt.GridLayout(0, 4, 5, 5));
         jScrollPane4.setViewportView(jPanel3);
 
-        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 1240, 420));
+        jPanel1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 1320, 480));
 
         rSButton2.setBackground(new java.awt.Color(0, 51, 102));
         rSButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_Login_24px.png"))); // NOI18N
         rSButton2.setText("Regresar");
         rSButton2.setColorHover(new java.awt.Color(0, 102, 255));
-        rSButton2.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        rSButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSButton2ActionPerformed(evt);
             }
         });
@@ -128,10 +119,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         rSButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_Search_31px.png"))); // NOI18N
         rSButton3.setText("Consultar");
         rSButton3.setColorHover(new java.awt.Color(0, 102, 255));
-        rSButton3.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        rSButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSButton3ActionPerformed(evt);
             }
         });
@@ -142,22 +131,19 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         txtBuscarClave.setBotonColor(new java.awt.Color(0, 51, 102));
         txtBuscarClave.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         txtBuscarClave.setOpaque(false);
-        txtBuscarClave.addKeyListener(new java.awt.event.KeyAdapter()
-        {
-            public void keyReleased(java.awt.event.KeyEvent evt)
-            {
+        txtBuscarClave.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtBuscarClaveKeyReleased(evt);
             }
         });
         jPanel1.add(txtBuscarClave, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 110, 250, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1260, 610));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1350, 670));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-    public JPanel componenetesRecomendacion(javax.swing.JPanel v, String nomreLibro, String autorLibro, String editorial)
-    {
+    public JPanel componenetesRecomendacion(javax.swing.JPanel v, String nomreLibro, String autorLibro, String editorial) {
         javax.swing.JPanel jPanel1 = new javax.swing.JPanel();
         javax.swing.JPanel panelRecomienda = new javax.swing.JPanel();
         javax.swing.JLabel etirquetaTituloLibro1 = new javax.swing.JLabel();
@@ -182,33 +168,25 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         panelRecomienda.setBackground(new java.awt.Color(255, 255, 255));
         panelRecomienda.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 51)));
 
-        panelRecomienda.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseEntered(java.awt.event.MouseEvent evt)
-            {
-                if (jCheckBox1.isSelected())
-                {
+        panelRecomienda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                if (jCheckBox1.isSelected()) {
                     jCheckBox2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
                     jCheckBox3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
                     jCheckBox4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
                     jCheckBox5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
-                } else if (jCheckBox2.isSelected())
-                {
+                } else if (jCheckBox2.isSelected()) {
                     jCheckBox3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
                     jCheckBox4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
                     jCheckBox5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
-                } else if (jCheckBox3.isSelected())
-                {
+                } else if (jCheckBox3.isSelected()) {
                     jCheckBox4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
                     jCheckBox5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
-                } else if (jCheckBox4.isSelected())
-                {
+                } else if (jCheckBox4.isSelected()) {
                     jCheckBox5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
-                } else if (jCheckBox5.isSelected())
-                {
+                } else if (jCheckBox5.isSelected()) {
 
-                } else
-                {
+                } else {
                     jCheckBox1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
                     jCheckBox2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
                     jCheckBox3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
@@ -268,10 +246,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         bntDescripcion1.setText("Ver descripción");
         bntDescripcion1.setColorHover(new java.awt.Color(0, 102, 204));
 
-        bntDescripcion1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        bntDescripcion1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 /*
                 Que se desea hacer una vez que se oprima el boton
                  */
@@ -287,12 +263,9 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         jCheckBox1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png"))); // NOI18N
         jCheckBox1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (2).png"))); // NOI18N
 
-        jCheckBox1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter()
-        {
-            public void mouseMoved(java.awt.event.MouseEvent evt)
-            {
-                if (!(jCheckBox1.isSelected() && jCheckBox2.isSelected() && jCheckBox3.isSelected() && jCheckBox4.isSelected() && jCheckBox5.isSelected()))
-                {
+        jCheckBox1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                if (!(jCheckBox1.isSelected() && jCheckBox2.isSelected() && jCheckBox3.isSelected() && jCheckBox4.isSelected() && jCheckBox5.isSelected())) {
                     jCheckBox1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
                     jCheckBox2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
                     jCheckBox3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (4).png")));
@@ -302,10 +275,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
             }
         });
 
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1.setSelected(true);
                 jCheckBox2.setSelected(false);
                 jCheckBox3.setSelected(false);
@@ -324,12 +295,9 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         jCheckBox2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png"))); // NOI18N
         jCheckBox2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (2).png"))); // NOI18N
 
-        jCheckBox2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter()
-        {
-            public void mouseMoved(java.awt.event.MouseEvent evt)
-            {
-                if (!(jCheckBox1.isSelected() && jCheckBox2.isSelected() && jCheckBox3.isSelected() && jCheckBox4.isSelected() && jCheckBox5.isSelected()))
-                {
+        jCheckBox2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                if (!(jCheckBox1.isSelected() && jCheckBox2.isSelected() && jCheckBox3.isSelected() && jCheckBox4.isSelected() && jCheckBox5.isSelected())) {
                     jCheckBox1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
                     jCheckBox2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
 
@@ -340,10 +308,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
             }
         });
 
-        jCheckBox2.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
 
                 jCheckBox1.setSelected(true);
                 jCheckBox2.setSelected(true);
@@ -363,12 +329,9 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         jCheckBox3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png"))); // NOI18N
         jCheckBox3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (2).png"))); // NOI18N
 
-        jCheckBox3.addMouseMotionListener(new java.awt.event.MouseMotionAdapter()
-        {
-            public void mouseMoved(java.awt.event.MouseEvent evt)
-            {
-                if (!(jCheckBox1.isSelected() && jCheckBox2.isSelected() && jCheckBox3.isSelected() && jCheckBox4.isSelected() && jCheckBox5.isSelected()))
-                {
+        jCheckBox3.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                if (!(jCheckBox1.isSelected() && jCheckBox2.isSelected() && jCheckBox3.isSelected() && jCheckBox4.isSelected() && jCheckBox5.isSelected())) {
                     jCheckBox1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
                     jCheckBox2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
                     jCheckBox3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
@@ -379,10 +342,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
             }
         });
 
-        jCheckBox3.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1.setSelected(true);
                 jCheckBox2.setSelected(true);
                 jCheckBox3.setSelected(true);
@@ -399,12 +360,9 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         jCheckBox4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png"))); // NOI18N
         jCheckBox4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (2).png"))); // NOI18N
 
-        jCheckBox4.addMouseMotionListener(new java.awt.event.MouseMotionAdapter()
-        {
-            public void mouseMoved(java.awt.event.MouseEvent evt)
-            {
-                if (!(jCheckBox1.isSelected() && jCheckBox2.isSelected() && jCheckBox3.isSelected() && jCheckBox4.isSelected() && jCheckBox5.isSelected()))
-                {
+        jCheckBox4.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                if (!(jCheckBox1.isSelected() && jCheckBox2.isSelected() && jCheckBox3.isSelected() && jCheckBox4.isSelected() && jCheckBox5.isSelected())) {
                     jCheckBox1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
                     jCheckBox2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
                     jCheckBox3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
@@ -415,10 +373,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
             }
         });
 
-        jCheckBox4.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1.setSelected(true);
                 jCheckBox2.setSelected(true);
                 jCheckBox3.setSelected(true);
@@ -434,12 +390,9 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         jCheckBox5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png"))); // NOI18N
         jCheckBox5.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (2).png"))); // NOI18N
 
-        jCheckBox5.addMouseMotionListener(new java.awt.event.MouseMotionAdapter()
-        {
-            public void mouseMoved(java.awt.event.MouseEvent evt)
-            {
-                if (!(jCheckBox1.isSelected() && jCheckBox2.isSelected() && jCheckBox3.isSelected() && jCheckBox4.isSelected() && jCheckBox5.isSelected()))
-                {
+        jCheckBox5.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                if (!(jCheckBox1.isSelected() && jCheckBox2.isSelected() && jCheckBox3.isSelected() && jCheckBox4.isSelected() && jCheckBox5.isSelected())) {
                     jCheckBox1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
                     jCheckBox2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
                     jCheckBox3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/icon-23-star (3).png")));
@@ -450,10 +403,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
             }
         });
 
-        jCheckBox5.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jCheckBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1.setSelected(true);
                 jCheckBox2.setSelected(true);
                 jCheckBox3.setSelected(true);
@@ -483,9 +434,25 @@ public class VtnConsultarLibros extends javax.swing.JFrame
 
     private void rSButton3ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_rSButton3ActionPerformed
     {//GEN-HEADEREND:event_rSButton3ActionPerformed
-        mostrarDatos(txtBuscarClave.getText().toUpperCase().trim());
-    }//GEN-LAST:event_rSButton3ActionPerformed
+        //mostrarDatos(txtBuscarClave.getText().toUpperCase().trim());
+        JPanel v = new JPanel();
+        v.setBackground(Color.white);
+        String nombreLibro = "Mono";
+        String autorLibro = "Monosx";
+        String editorial = "Esfinge";
+        JPanel panelImagen = componentesReacciona(v, nombreLibro, autorLibro, editorial);
+        //JPanel panelImagen = componenetesRecomendacion(v, nombreLibro, autorLibro, editorial);
 
+        ImageIcon icono = imageF;
+        javax.swing.JLabel imagenPortada = new javax.swing.JLabel();
+        imagenPortada.setBounds(0, 0, 130, 150);
+        imagenPortada.setIcon(new ImageIcon(icono.getImage().getScaledInstance(130, 150, Image.SCALE_SMOOTH)));
+        imagenPortada.setVisible(true);
+        panelImagen.add(imagenPortada);
+        jPanel3.add(v);
+        jPanel3.updateUI();
+    }//GEN-LAST:event_rSButton3ActionPerformed
+    private final ImageIcon imageF = new ImageIcon(ClassLoader.getSystemResource("imagenes/1.jpg"));
     private void rSButton2ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_rSButton2ActionPerformed
     {//GEN-HEADEREND:event_rSButton2ActionPerformed
         CtrComponentes.botonSalirSI(this, nombre_Final_de_Usuario, pantallas_Usuario);
@@ -496,22 +463,18 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         mostrarDatos(txtBuscarClave.getText().toUpperCase().trim());
     }//GEN-LAST:event_txtBuscarClaveKeyReleased
 
-    public void btnmuestr()
-    {
+    public void btnmuestr() {
         mostrarDatos(txtBuscarClave.getText().toUpperCase().trim());
 
     }
 
-    void mostrarDatos(String clave)
-    {
+    void mostrarDatos(String clave) {
 
         String sql = "";
-        if (clave.equals(""))
-        {
+        if (clave.equals("")) {
             sql = "SELECT * FROM t_libro";
             jPanel3.removeAll();
-        } else
-        {
+        } else {
 
             sql = "SELECT * FROM t_libro WHERE nombre_libro like '%" + clave + "%' OR autor_libro like '%" + clave + "%' OR editorial_libro like '%" + clave + "%'";
             jPanel3.removeAll();
@@ -520,29 +483,25 @@ public class VtnConsultarLibros extends javax.swing.JFrame
 
         Statement st;
         Conexion.con = Conexion.getConexion();
-        try
-        {
+        try {
             st = Conexion.con.createStatement();
             ResultSet rs = st.executeQuery(sql);
-            while (rs.next())
-            {
+            while (rs.next()) {
 
                 JPanel v = new JPanel();
                 v.setBackground(Color.white);
                 String nombreLibro = rs.getString("nombre_libro");
                 String autorLibro = rs.getString("autor_libro");
                 String editorial = rs.getString("editorial_libro");
-                 JPanel panelImagen = componentesReacciona(v, nombreLibro, autorLibro, editorial);
+                JPanel panelImagen = componentesReacciona(v, nombreLibro, autorLibro, editorial);
                 //JPanel panelImagen = componenetesRecomendacion(v, nombreLibro, autorLibro, editorial);
 
                 Blob blob = rs.getBlob("portada");
                 byte[] data = blob.getBytes(1, (int) blob.length());
                 BufferedImage img = null;
-                try
-                {
+                try {
                     img = ImageIO.read(new ByteArrayInputStream(data));
-                } catch (Exception e)
-                {
+                } catch (Exception e) {
                     Mensaje.errorException(this, "Ha ocurrido un error \n" + e.toString());
                 }
 
@@ -557,15 +516,13 @@ public class VtnConsultarLibros extends javax.swing.JFrame
 
             }
 
-        } catch (SQLException e)
-        {
+        } catch (SQLException e) {
             Mensaje.errorException(this, "Ha ocurrido un error \n" + e.toString());
         }
 
     }
 
-    public JPanel componentesReacciona(javax.swing.JPanel v, String nomreLibro, String autorLibro, String editorial)
-    {
+    public JPanel componentesReacciona(javax.swing.JPanel v, String nomreLibro, String autorLibro, String editorial) {
         javax.swing.ButtonGroup buttonGroup1 = new javax.swing.ButtonGroup();
         javax.swing.JPanel jPanel1 = new javax.swing.JPanel();
         javax.swing.JPanel panelReaccion = new javax.swing.JPanel();
@@ -630,10 +587,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         panelReaccion.add(etiqueta3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 80, -1));
 
         panelVerificarReaccion.setOpaque(false);
-        panelVerificarReaccion.addMouseMotionListener(new java.awt.event.MouseMotionAdapter()
-        {
-            public void mouseMoved(java.awt.event.MouseEvent evt)
-            {
+        panelVerificarReaccion.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
                 panelLlamadaEmocion.setVisible(false);
             }
         });
@@ -641,10 +596,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
 
         panelEmocion.setOpaque(false);
 
-        panelEmocion.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        panelEmocion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 panelLlamadaEmocion.setVisible(false);
                 reacciona(radioEncanta, radioSonroja, radioAsombra, radioDivierte, radioEntristece, radioEnoja, radioGusta, botonEmocion, panelLlamadaEmocion);
             }
@@ -662,10 +615,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         radioEncanta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meEncanta1.png"))); // NOI18N
         radioEncanta.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meEncanta2.png"))); // NOI18N
         radioEncanta.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meEncanta3.png"))); // NOI18N
-        radioEncanta.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        radioEncanta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reacciona(radioEncanta, radioSonroja, radioAsombra, radioDivierte, radioEntristece, radioEnoja, radioGusta, botonEmocion, panelLlamadaEmocion);
             }
         });
@@ -675,10 +626,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         radioSonroja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meSonroja1.png"))); // NOI18N
         radioSonroja.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meSonroja2.png"))); // NOI18N
         radioSonroja.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meSonroja3.png"))); // NOI18N
-        radioSonroja.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        radioSonroja.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reacciona(radioEncanta, radioSonroja, radioAsombra, radioDivierte, radioEntristece, radioEnoja, radioGusta, botonEmocion, panelLlamadaEmocion);
             }
         });
@@ -688,10 +637,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         radioAsombra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meAsombra1.png"))); // NOI18N
         radioAsombra.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meAsombra2.png"))); // NOI18N
         radioAsombra.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meAsombra3.png"))); // NOI18N
-        radioAsombra.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        radioAsombra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reacciona(radioEncanta, radioSonroja, radioAsombra, radioDivierte, radioEntristece, radioEnoja, radioGusta, botonEmocion, panelLlamadaEmocion);
             }
         });
@@ -701,10 +648,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         radioDivierte.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meDivierte1.png"))); // NOI18N
         radioDivierte.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meDivierte2.png"))); // NOI18N
         radioDivierte.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meDivierte3.png"))); // NOI18N
-        radioDivierte.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        radioDivierte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reacciona(radioEncanta, radioSonroja, radioAsombra, radioDivierte, radioEntristece, radioEnoja, radioGusta, botonEmocion, panelLlamadaEmocion);
             }
         });
@@ -714,10 +659,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         radioEntristece.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meEntristece1.png"))); // NOI18N
         radioEntristece.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meEntristece2.png"))); // NOI18N
         radioEntristece.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meEntristece3.png"))); // NOI18N
-        radioEntristece.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        radioEntristece.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reacciona(radioEncanta, radioSonroja, radioAsombra, radioDivierte, radioEntristece, radioEnoja, radioGusta, botonEmocion, panelLlamadaEmocion);
             }
         });
@@ -727,10 +670,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         radioEnoja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meEnoja1.png"))); // NOI18N
         radioEnoja.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meEnoja2.png"))); // NOI18N
         radioEnoja.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meEnoja3.png"))); // NOI18N
-        radioEnoja.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        radioEnoja.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reacciona(radioEncanta, radioSonroja, radioAsombra, radioDivierte, radioEntristece, radioEnoja, radioGusta, botonEmocion, panelLlamadaEmocion);
             }
         });
@@ -740,10 +681,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         radioGusta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meGusta1.png"))); // NOI18N
         radioGusta.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meGusta2.png"))); // NOI18N
         radioGusta.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/emociones/meGusta3.png"))); // NOI18N
-        radioGusta.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        radioGusta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reacciona(radioEncanta, radioSonroja, radioAsombra, radioDivierte, radioEntristece, radioEnoja, radioGusta, botonEmocion, panelLlamadaEmocion);
             }
         });
@@ -755,19 +694,15 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         botonEmocion.setForeground(new java.awt.Color(153, 153, 153));
         botonEmocion.setText("Me gusta");
         botonEmocion.setContentAreaFilled(false);
-        botonEmocion.addMouseMotionListener(new java.awt.event.MouseMotionAdapter()
-        {
-            public void mouseMoved(java.awt.event.MouseEvent evt)
-            {
+        botonEmocion.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
                 panelLlamadaEmocion.setVisible(true);
                 panelVerificarReaccion.setVisible(true);
                 panelEmocion.setVisible(true);
             }
         });
-        botonEmocion.addMouseListener(new java.awt.event.MouseAdapter()
-        {
-            public void mouseClicked(java.awt.event.MouseEvent evt)
-            {
+        botonEmocion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
                 botonEmocion.setForeground(new Color(153, 153, 153));
                 botonEmocion.setText("Me gusta");
                 botonEmocion.setIcon(null);
@@ -800,10 +735,8 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         bntDescripcion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_Up_24px.png"))); // NOI18N
         bntDescripcion.setText("Ver descripción");
         bntDescripcion.setColorHover(new java.awt.Color(0, 102, 204));
-        bntDescripcion.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        bntDescripcion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 /*
                 Que se desea hacer si se oprime el botonVerDescripcion
                  */
@@ -818,53 +751,44 @@ public class VtnConsultarLibros extends javax.swing.JFrame
         return jPanelImagem;
     }
 
-    public void reacciona(javax.swing.JRadioButton radioEncanta, javax.swing.JRadioButton radioSonroja, javax.swing.JRadioButton radioAsombra, javax.swing.JRadioButton radioDivierte, javax.swing.JRadioButton radioEntristece, javax.swing.JRadioButton radioEnoja, javax.swing.JRadioButton radioGusta, javax.swing.JToggleButton botonEmocion, org.edisoncor.gui.panel.PanelLlamada panelLlamadaEmocion)
-    {
-        if (radioEncanta.isSelected())
-        {
+    public void reacciona(javax.swing.JRadioButton radioEncanta, javax.swing.JRadioButton radioSonroja, javax.swing.JRadioButton radioAsombra, javax.swing.JRadioButton radioDivierte, javax.swing.JRadioButton radioEntristece, javax.swing.JRadioButton radioEnoja, javax.swing.JRadioButton radioGusta, javax.swing.JToggleButton botonEmocion, org.edisoncor.gui.panel.PanelLlamada panelLlamadaEmocion) {
+        if (radioEncanta.isSelected()) {
             botonEmocion.setForeground(new Color(204, 0, 0));
             botonEmocion.setText("Me encanta");
             botonEmocion.setIcon(radioEncanta.getSelectedIcon());
             panelLlamadaEmocion.setVisible(false);
-        } else if (radioSonroja.isSelected())
-        {
+        } else if (radioSonroja.isSelected()) {
             botonEmocion.setForeground(new Color(255, 204, 0));
             botonEmocion.setText("Me sonroja");
             botonEmocion.setIcon(radioSonroja.getSelectedIcon());
             panelLlamadaEmocion.setVisible(false);
-        } else if (radioAsombra.isSelected())
-        {
+        } else if (radioAsombra.isSelected()) {
             botonEmocion.setForeground(new Color(255, 204, 0));
             botonEmocion.setText("Me asombra");
             botonEmocion.setIcon(radioAsombra.getSelectedIcon());
             panelLlamadaEmocion.setVisible(false);
-        } else if (radioDivierte.isSelected())
-        {
+        } else if (radioDivierte.isSelected()) {
             botonEmocion.setForeground(new Color(255, 204, 0));
             botonEmocion.setText("Me divierte");
             botonEmocion.setIcon(radioDivierte.getSelectedIcon());
             panelLlamadaEmocion.setVisible(false);
-        } else if (radioEntristece.isSelected())
-        {
+        } else if (radioEntristece.isSelected()) {
             botonEmocion.setForeground(new Color(255, 204, 0));
             botonEmocion.setText("Me entristece");
             botonEmocion.setIcon(radioEntristece.getSelectedIcon());
             panelLlamadaEmocion.setVisible(false);
-        } else if (radioEnoja.isSelected())
-        {
+        } else if (radioEnoja.isSelected()) {
             botonEmocion.setForeground(new Color(204, 102, 0));
             botonEmocion.setText("Me enfada");
             botonEmocion.setIcon(radioEnoja.getSelectedIcon());
 
             panelLlamadaEmocion.setVisible(false);
-        } else if (radioGusta.isSelected())
-        {
+        } else if (radioGusta.isSelected()) {
             botonEmocion.setForeground(new Color(0, 102, 255));
             botonEmocion.setText("Me gusta");
             botonEmocion.setIcon(radioGusta.getSelectedIcon());
             panelLlamadaEmocion.setVisible(false);
-        } else
-        {
+        } else {
             botonEmocion.setForeground(new Color(153, 153, 153));
             botonEmocion.setText("Me gusta");
             botonEmocion.setIcon(null);
