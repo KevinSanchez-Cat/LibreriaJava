@@ -45,7 +45,7 @@ public class VtnInicioSoftware extends javax.swing.JFrame
         jLabel3.setFont(new java.awt.Font("AR BONNIE", 0, 78)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("KREATIVE");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 520, 110));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 430, 80));
 
         jLabel1.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 11)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));

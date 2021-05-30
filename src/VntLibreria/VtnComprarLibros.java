@@ -59,8 +59,7 @@ public class VtnComprarLibros extends javax.swing.JFrame
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         jPopupMenu1 = new javax.swing.JPopupMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -88,10 +87,8 @@ public class VtnComprarLibros extends javax.swing.JFrame
         jPopupMenu1.add(jMenuItem1);
 
         jMenuItem2.setText("Añadir al carrito");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
             }
         });
@@ -128,10 +125,8 @@ public class VtnComprarLibros extends javax.swing.JFrame
         rSButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_Add_Shopping_Cart_24px.png"))); // NOI18N
         rSButton2.setText("Rentar");
         rSButton2.setColorHover(new java.awt.Color(0, 102, 204));
-        rSButton2.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        rSButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSButton2ActionPerformed(evt);
             }
         });
@@ -141,33 +136,26 @@ public class VtnComprarLibros extends javax.swing.JFrame
         rSButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/icons8_Login_24px.png"))); // NOI18N
         rSButton3.setText("Regresar");
         rSButton3.setColorHover(new java.awt.Color(0, 102, 204));
-        rSButton3.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        rSButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSButton3ActionPerformed(evt);
             }
         });
         jPanel3.add(rSButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, 140, -1));
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][]
-            {
+            new Object [][] {
 
             },
-            new String []
-            {
+            new String [] {
                 "Libro", "Autor", "Precio", "Cantidad"
             }
-        )
-        {
-            boolean[] canEdit = new boolean []
-            {
+        ) {
+            boolean[] canEdit = new boolean [] {
                 false, false, false, false
             };
 
-            public boolean isCellEditable(int rowIndex, int columnIndex)
-            {
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
@@ -180,8 +168,7 @@ public class VtnComprarLibros extends javax.swing.JFrame
         jTable2.setFuenteFilasSelect(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jTable2.setFuenteHead(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jScrollPane4.setViewportView(jTable2);
-        if (jTable2.getColumnModel().getColumnCount() > 0)
-        {
+        if (jTable2.getColumnModel().getColumnCount() > 0) {
             jTable2.getColumnModel().getColumn(0).setResizable(false);
             jTable2.getColumnModel().getColumn(1).setResizable(false);
             jTable2.getColumnModel().getColumn(2).setResizable(false);
@@ -211,54 +198,46 @@ public class VtnComprarLibros extends javax.swing.JFrame
         jTextField2.setBotonColor(new java.awt.Color(0, 51, 102));
         jTextField2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jTextField2.setOpaque(false);
-        jTextField2.addKeyListener(new java.awt.event.KeyAdapter()
-        {
-            public void keyReleased(java.awt.event.KeyEvent evt)
-            {
+        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField2KeyReleased(evt);
             }
         });
         jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 130, 280, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][]
-            {
+            new Object [][] {
 
             },
-            new String []
-            {
+            new String [] {
                 "Nombre del libro", "Autor", "Precio", "Stock", "Descripción", "Portada"
             }
-        )
-        {
-            boolean[] canEdit = new boolean []
-            {
+        ) {
+            boolean[] canEdit = new boolean [] {
                 false, false, false, false, false, false
             };
 
-            public boolean isCellEditable(int rowIndex, int columnIndex)
-            {
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
-        jTable1.setColorBackgoundHead(new java.awt.Color(0, 51, 102));
+        jTable1.setColorBackgoundHead(new java.awt.Color(0, 102, 102));
         jTable1.setColorBordeFilas(new java.awt.Color(204, 204, 204));
         jTable1.setColorBordeHead(new java.awt.Color(204, 204, 204));
         jTable1.setColorFilasForeground1(new java.awt.Color(0, 0, 51));
         jTable1.setColorFilasForeground2(new java.awt.Color(0, 0, 0));
+        jTable1.setColorSelBackgound(new java.awt.Color(0, 153, 153));
         jTable1.setComponentPopupMenu(jPopupMenu2);
         jTable1.setFuenteHead(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jTable1.setSelectionBackground(new java.awt.Color(0, 153, 153));
         jScrollPane3.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0)
-        {
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
             jTable1.getColumnModel().getColumn(0).setResizable(false);
             jTable1.getColumnModel().getColumn(1).setResizable(false);
             jTable1.getColumnModel().getColumn(2).setResizable(false);
             jTable1.getColumnModel().getColumn(3).setResizable(false);
             jTable1.getColumnModel().getColumn(4).setResizable(false);
-            jTable1.getColumnModel().getColumn(4).setHeaderValue("Descripción");
             jTable1.getColumnModel().getColumn(5).setResizable(false);
-            jTable1.getColumnModel().getColumn(5).setHeaderValue("Portada");
         }
 
         jPanel1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 810, 390));

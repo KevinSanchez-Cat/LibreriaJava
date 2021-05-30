@@ -35,7 +35,7 @@ public class PerflProgra extends javax.swing.JInternalFrame
         this.nombre_Final_de_Usuario = nombre_Final_de_Usuario;
         initComponents();
         this.jf = jf;
-        try
+      /*  try
         {
 
             Conexion.con = Conexion.getConexion();
@@ -102,7 +102,7 @@ public class PerflProgra extends javax.swing.JInternalFrame
         {
             Mensaje.errorException(null, "Ha ocurrido un error \n" + ex.toString());
         }
-
+*/
     }
 
     /**
